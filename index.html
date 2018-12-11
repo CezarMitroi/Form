@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='style.css' type='text/css' rel='stylesheet'>
+    <title>Survey Form</title>
+  </head>
+  <header>
+<h1 id="title">Survey form</h1>
+      </header>
+     <body>
+<div id="form-outer">
+  <p id="description">
+    Let us know how we can help you
+  </p>
+  <form id="survey-form">
+    <div>
+      <label id="name-label">*Name:</label>
+      <input id="name"  placeholder="Enter your name" type="text" required>
+    </div>
+    <div>
+     <label id="email-label">*Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+     <label id="number-label">*Age:</label>
+     <input type="number" min="1" max="125" id="number" placeholder="Age">
+    </div>
+    <div>
+      <label for="currentPos">Select your current role</label>
+      <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>Select from this list</option>
+        <option  value="student">Student and broke</option>
+        <option value="job">Full Time Job and rich</option>
+       <option value="learner">Full Time Learner and broke</option>
+       <option value="preferNo">Prefer not to say, sorry man</option>
+       <option value="other">Other, IDK</option>
+     </select>
+    </div>
+    <div>
+     <label>What do you want to learn?</label>
+      <ul  class="flex" style="list-style: none;">
+       <li><input type="radio" name="radio-buttons" value="1">Programming</li>
+       <li><input type="radio" name="radio-buttons" value="2">Programming again</li>
+       <li><input type="radio" name="radio-buttons" value="3">Programming 3</li>
+       </ul>
+    </div>
+    <div>
+      <label>To be improved</label>
+      <ul class="flex" style="list-style: none;">
+       <li><input type="checkbox" value="1">This</li>
+       <li><input type="checkbox" value="2">That</li>
+       <li><input type="checkbox" value="3">Other thing</li>
+       <li><input type="checkbox" value="4">Another thing</li>
+      </ul>
+     </div>
+     <div>
+      <label>Want to complain? Go ahead man..</label>
+      <textarea  style="resize:vertical;" placeholder="Be careful..."></textarea>
+     </div>
+     <button id="submit" onclick = 'check()'>Submit</button>
+
+    </form>
+</div>
+    </body>
+</html>
