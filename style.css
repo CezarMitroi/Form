@@ -1,0 +1,47 @@
+#title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+html, body {
+   background-color: #BDBDBD;
+  font-family: georgia;
+  
+}
+#form-outer {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 70%;
+  border-radius: 40px;
+}
+
+#description {
+  text-align: center;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #BDBDBD;
+}
+
+label {
+  width: 150px;
+  float: left;
+  text-align: right;
+  padding-right: 12px;
+  margin-top: 12px;
+  clear: left;
+}
+input, select, textarea {
+  margin-top: 12px;
+}
+
+#submit {
+  margin-left: 50%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 40px;
+  
+}
